@@ -8,19 +8,19 @@ const getPromise = (url) => {
         else reject("Promise rejected. No return value")
       })
       .catch((error) => {
-        reject("Promise rejected");
-      });
-  });
-};
+        reject("Promise rejected")
+      })
+  })
+}
 
 let url = "testURL"
 
 getPromise(url)
   .then((success) => {
-    console.log("Success:", success);
+    console.log("Success:", success)
   })
   .catch((error) => {
-    console.log("Error:", error);
+    console.log("Error:", error)
   });
 
-  module.exports = getPromise;
+  module.exports = getPromise
