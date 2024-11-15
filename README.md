@@ -5,3 +5,7 @@ Depending on the data returned from the ajax call (you can assume the function r
 If the function returns 0, reject the deferred object and, if the function returns 1, resolve the deferred object. 
 
 To execute: Run "node promise.js" in terminal
+
+To run test cases: 
+1. npm install --save-dev jest
+2. npm test

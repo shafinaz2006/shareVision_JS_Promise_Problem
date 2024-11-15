@@ -14,7 +14,7 @@ const getPromise = (url) => {
 };
 
 let url = "testURL"
-// let url = "https://www.omdbapi.com/?i=tt3896198&apikey=4bb50978"
+
 getPromise(url)
   .then((success) => {
     console.log("Success:", success);
@@ -22,3 +22,5 @@ getPromise(url)
   .catch((error) => {
     console.log("Error:", error);
   });
+
+  module.exports = getPromise;
